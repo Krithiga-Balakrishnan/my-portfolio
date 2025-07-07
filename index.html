@@ -59,7 +59,7 @@
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#portfolio-section" class="nav-link">Home</a>
+                <li><a href="#home-section" class="nav-link">Home</a>
                 </li>
                 <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
                 <li><a href="#about-section" class="nav-link">About</a></li>
@@ -123,6 +123,52 @@
 
       </div>
       <!-- END .cover-v1 -->
+      <div class="unslate_co--section" id="about-section">
+        <div class="container">
+
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
+            <span class="gsap-reveal">
+              <img src="images/divider.png" alt="divider" width="76">
+            </span>
+          </div>
+
+
+          <div class="row mt-5 justify-content-between">
+            <div class="col-lg-7 mb-5 mb-lg-0 text-center">
+              <figure class="dotted-bg gsap-reveal-img ">
+                <img src="images/cover_me.jpg" alt="Image" class="img-fluid" style="height: 550px;">
+              </figure>
+            </div>
+            <div class="col-lg-5 pr-lg-5">
+              <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Let’s Build the Future Together</span></h3>
+              <p class="lead gsap-reveal">
+                I’m a driven software engineering with real-world experience in both technical development and
+                business coordination.
+                I thrive at the intersection of data, systems, and people turning ideas into scalable solutions.
+              </p>
+              <p class="mb-4 gsap-reveal">
+                Whether it’s delivering clean code in React and Java or translating complex data into clear business
+                strategies,
+                I’m committed to making meaningful impact in forward-thinking teams. Let’s connect and create what’s
+                next.
+              </p>
+              <p class="gsap-reveal">
+                <a href="docs/Resume_Krithiga_Balakrishnan_SE.pdf" class="btn btn-outline-pill btn-custom-light me-2"
+                  target="_blank" rel="noopener noreferrer">
+                  View My CV
+                </a>
+                <a href="docs/Resume_Krithiga_Balakrishnan_SE.pdf" class="btn btn-outline-pill btn-custom-light"
+                  download>
+                  Download My CV
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="unslate_co--section" id="portfolio-section">
         <div class="container">
 
@@ -135,51 +181,8 @@
 
 
 
-          <div class="unslate_co--section" id="about-section">
-            <div class="container">
 
-              <div class="section-heading-wrap text-center mb-5">
-                <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
-                <span class="gsap-reveal">
-                  <img src="images/divider.png" alt="divider" width="76">
-                </span>
-              </div>
-
-
-              <div class="row mt-5 justify-content-between">
-                <div class="col-lg-7 mb-5 mb-lg-0 text-center">
-                  <figure class="dotted-bg gsap-reveal-img ">
-                    <img src="images/cover_me.jpg" alt="Image" class="img-fluid" style="height: 550px;">
-                  </figure>
-                </div>
-                <div class="col-lg-5 pr-lg-5">
-                  <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Let’s Build the Future Together</span></h3>
-                  <p class="lead gsap-reveal">
-                    I’m a driven software engineering with real-world experience in both technical development and
-                    business coordination.
-                    I thrive at the intersection of data, systems, and people turning ideas into scalable solutions.
-                  </p>
-                  <p class="mb-4 gsap-reveal">
-                    Whether it’s delivering clean code in React and Java or translating complex data into clear business
-                    strategies,
-                    I’m committed to making meaningful impact in forward-thinking teams. Let’s connect and create what’s
-                    next.
-                  </p>
-                  <p class="gsap-reveal">
-                    <a href="docs/Resume_Krithiga_Balakrishnan_SE.pdf"
-                      class="btn btn-outline-pill btn-custom-light me-2" target="_blank" rel="noopener noreferrer">
-                      View My CV
-                    </a>
-                    <a href="docs/Resume_Krithiga_Balakrishnan_SE.pdf" class="btn btn-outline-pill btn-custom-light"
-                      download>
-                      Download My CV
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div id="portfolio-single-holder"></div> -->
+          <div id="portfolio-single-holder"></div>
 
           <div class="portfolio-wrapper">
 
@@ -201,14 +204,13 @@
             <div id="posts" class="row gutter-isotope-item">
               <!-- Project 1: TourAround -->
               <div class="item mobile col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-
                 <!-- Image 1 -->
                 <a href="images/projects/nearest_place.png" class="portfolio-item isotope-item gsap-reveal-img"
                   data-fancybox="gallery" data-caption='
   <div style="text-align:center;">
-    <strong>Nearest Tourist Places</strong>
-    <a href="portfolio-single-1.html"
-       class="btn-more-details" 
+    <strong>Home Page</strong>
+    <a href="portfolio-single-2.html"
+       class="btn-more-details"
        data-id="1"
        style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
   </div>'>
@@ -225,7 +227,7 @@
                 <a href="images/projects/direction.png" data-fancybox="gallery" data-caption='
   <div style="text-align:center;">
     <strong>Directions To Nearest Places</strong>
-    <a href="portfolio-single-1.html"
+    <a href="portfolio-single-2.html"
        class="btn-more-details"
        data-id="1"
        style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
@@ -234,14 +236,14 @@
                 <a href="images/projects/object_detection.png" data-fancybox="gallery" data-caption='
   <div style="text-align:center;">
     <strong>Identifying Cultural Statues</strong>
-    <a href="portfolio-single-1.html"
+    <a href="portfolio-single-2.html"
        class="btn-more-details"
        data-id="1"
        style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
   </div>' style="display: none;"></a>
 
                 <!-- Hidden AJAX Trigger -->
-                <a href="portfolio-single-3.html" id="trigger-ajax-1"
+                <a href="portfolio-single-2.html" id="trigger-ajax-1"
                   class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="1"
                   style="display: none;"></a>
               </div>
@@ -254,12 +256,12 @@
                   data-fancybox="gallery" data-caption='
                    <div style="text-align:center;">
                     <strong>Home page</strong>
-                    <a href="portfolio-single-3.html"
+                    <a href="portfolio-single-1.html"
                             class="btn-more-details"
                             data-id="3"
                             style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
                     </div>'>
-                  <img src="images/projects/GalaxyGazeHome.png" class="img-fluid" alt="Galaxy Gaze Homepage" />
+                  <img src="images/projects/GalaxyGazeHome.png" class="lazyload img-fluid" alt="Galaxy Gaze Homepage" />
                   <div class="overlay">
                     <span class="wrap-icon icon-photo2"></span>
                     <div class="portfolio-item-content">
@@ -273,7 +275,7 @@
                 <a href="images/projects/GalaxyGazeAPOD!.png" data-fancybox="gallery" data-caption='
                       <div style="text-align:center;">
                         <strong>Picture of the Day</strong>
-                        <a href="portfolio-single-3.html"
+                        <a href="portfolio-single-1.html"
                           class="btn-more-details"
                           data-id="3"
                           style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
@@ -284,7 +286,7 @@
                 <a href="images/projects/GalaxyGazeMarsRover.png" data-fancybox="gallery" data-caption='
                     <div style="text-align:center;">
                       <strong>MarsRover Images</strong>
-                      <a href="portfolio-single-3.html"
+                      <a href="portfolio-single-1.html"
                         class="btn-more-details"
                         data-id="3"
                         style="display:block; margin-top:10px; color:#f44336;">▼ More Details</a>
@@ -838,8 +840,8 @@
             <div class="footer-site-logo"><a href="#">Krithiga D.B<span>.</span></a></div>
 
             <ul class="footer-site-social">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/krithiga-balakrishnan-163216216">LinkedIn</a></li>
+              <li><a href="https://github.com/Krithiga-Balakrishnan">GitHub</a></li>
               <!-- <li><a href="#">Instagram</a></li> -->
               <!-- <li><a href="#">Dribbble</a></li>
               <li><a href="#">Behance</a></li> -->
@@ -848,7 +850,7 @@
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
-              </script> All rights reserved.</i>         
+              </script> All rights reserved.</i>
 
             </p>
 

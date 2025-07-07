@@ -100,37 +100,7 @@ $('.skills-carousel').owlCarousel({
 document.addEventListener("DOMContentLoaded", () => {
 	emailjs.init("wk7rlBuey-7mLSwtr");
 });
-// function sendEmail(e) {
-// 	e.preventDefault();
 
-// 	emailjs.sendForm("service_c2k7r86", "template_h1nho67", "#contactForm")
-// 		// .then(() => {
-// 		// 	document.getElementById('form-message-success').style.display = 'block';
-// 		// 	document.getElementById('form-message-warning').textContent = '';
-// 		// 	document.getElementById("contactForm").reset();
-// 		// }, (err) => {
-// 		// 	console.error("Failed to send email:", err);
-// 		// 	document.getElementById('form-message-warning').textContent = 'Failed to send message. Try again.';
-// 		// });
-// 		  .then(() => {
-//       document.getElementById("contactForm").reset();
-//       Toastify({
-//         text: "Email sent successfully!",
-//         duration: 3000,
-//         backgroundColor: "green",
-//       }).showToast();
-//       document.getElementById('form-message-warning').textContent = '';
-//     })
-//     .catch((err) => {
-//       console.error("EmailJS error:", err);
-//       Toastify({
-//         text: "Failed to send email. Try again.",
-//         duration: 3000,
-//         backgroundColor: "red",
-//       }).showToast();
-//       document.getElementById('form-message-warning').textContent = 'Failed to send message. Try again.';
-//     });
-// }
 function sendEmail(e) {
 	e.preventDefault();
 	const form = document.getElementById("contactForm");
@@ -806,3 +776,21 @@ var animateReveal = function () {
 
 }
 
+$('.skills-carousel').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 0,            // no delay
+  speed: 3000,                 // smooth speed
+  cssEase: 'linear',           // linear = continuous
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  responsive: [
+    { breakpoint: 992, settings: { slidesToShow: 3 } },
+    { breakpoint: 768, settings: { slidesToShow: 2 } },
+    { breakpoint: 576, settings: { slidesToShow: 1 } }
+  ]
+});
