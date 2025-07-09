@@ -774,6 +774,35 @@ var animateReveal = function () {
 		});
 	}
 
+$('.timeline-content').each(function (index) {
+  const content = $(this);
+
+  const tl = new TimelineMax();
+
+  // You can animate from x depending on left/right if desired
+  const fromX = content.closest('.timeline-item').hasClass('left') ? -50 : 50;
+
+  tl.fromTo(content, 0.8,
+    { x: fromX, y: 50, autoAlpha: 0 },
+    {
+      x: 0,
+      y: 0,
+      autoAlpha: 1,
+      ease: Power4.easeOut,
+      delay: index * 0.1
+    });
+
+  new ScrollMagic.Scene({
+    triggerElement: content[0],
+    triggerHook: 0.9,
+    reverse: false
+  })
+    .setTween(tl)
+    .addTo(controller);
+});
+
+
+
 }
 
 $('.skills-carousel').slick({
