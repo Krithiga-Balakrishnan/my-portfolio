@@ -5,6 +5,3 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 ## 🌐 Live Demo
 
 Hosted on **Vercel**: [Visit Portfolio](https://your-vercel-url.vercel.app)
-
-## 📁 Project Structure
-
